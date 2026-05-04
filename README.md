@@ -6,19 +6,16 @@ This README explains how to reproduce the evaluation results for **comMDM** usin
 
 ---
 
-## 1. Environment Setup
+## 1. Generate Results with comMDM
 
-### Stage 1: PriorMDM Environment (for Generation)
+### PriorMDM Environment (for Generation)
 
 First, set up the environment following the official PriorMDM project:
 
 - 🔗 https://priormdm.github.io/priorMDM-page/
 
 Make sure all dependencies are correctly installed before proceeding.
-
----
-
-## 2. Generate Results with comMDM
+ 
 
 ### Data and Model Paths
 
@@ -31,7 +28,7 @@ Make sure all dependencies are correctly installed before proceeding.
 
 ./generate_result_comMDM/save/modal/model000200000.pt
 
--SMPL models path:
+- SMPL models path:
 ./generate_result_comMDM/body_models/smpl
 
 
@@ -50,7 +47,7 @@ python -m eval.generate_eval_results \
 This step will generate motion results using the trained comMDM model.
 
 
-## 3. Evaluation with InterGen (InterCLIP)
+## 2. Evaluation with InterGen (InterCLIP)
 Environment Setup
 
 Switch to the InterGen evaluation environment and follow the setup instructions:
